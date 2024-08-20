@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for ( let button of buttons) {
        button.addEventListener("click", function() {
           if (this.getAttribute("data-type") === "submit"){
-              alert("You clikced Submit!");
+              alert("You clicked Submit!");
           }  else {
               let gameType = this.getAttribute("data-type");
               alert(`You clicked ${gameType}`); 
@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function runGame() {
+
+    // Creates two random numbers between 1 and 25
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 
 }
 
